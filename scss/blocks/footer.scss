@@ -1,0 +1,19 @@
+@import "../vars.scss";
+.footer {
+  padding-top: 50px;
+  &__title {
+    text-transform: uppercase;
+    color: #667dfa;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  &__inner {
+    padding-bottom: 25px;
+  }
+}
+.list {
+  &__item {
+    list-style-type: none;
+    font-size: 20px;
+  }
+}

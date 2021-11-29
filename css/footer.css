@@ -1,0 +1,19 @@
+.footer {
+  padding-top: 50px;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  color: #667dfa;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.footer__inner {
+  padding-bottom: 25px;
+}
+
+.list__item {
+  list-style-type: none;
+  font-size: 20px;
+}

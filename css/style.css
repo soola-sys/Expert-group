@@ -1,0 +1,280 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #202020;
+  z-index: 100;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 0;
+}
+
+.header__logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__img {
+  color: #ffffff;
+}
+
+.social__link :not(last-child) {
+  margin: 0 5px 0 0;
+}
+
+.main__section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+}
+
+.main__button {
+  width: 100%;
+  height: 60px;
+  font-weight: 500;
+  margin: 25px 0 25px 0;
+  padding: 8px 10px;
+  background: #667dfa;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.main__button:hover,
+.main__button :focus {
+  color: #667dfa;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.section {
+  color: #ffffff;
+}
+
+.section__list {
+  font-size: 20px;
+}
+
+.section__main-image {
+  position: relative;
+  width: 545px;
+  height: 500px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+  transform: rotate(-30deg) skew(25deg) scale(0.8);
+  transition: 0.5s;
+}
+
+.section__main-image img {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+  padding: 0 20px 0 0;
+}
+
+.section__title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.section__info {
+  max-width: 350px;
+}
+
+.section__item {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.section__main-image:hover img:nth-child(4) {
+  transform: translate(140px, -140px);
+  opacity: 1;
+}
+
+.section__main-image:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+
+.section__main-image:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.section__main-image:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
+
+.main-question {
+  background: #ffffff;
+  color: #202020;
+}
+
+.questions__list {
+  padding-top: 25px;
+}
+
+.questions__title {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.questions__title:not(last-child) {
+  margin: 0 0 15px 0;
+}
+
+.questions__answer {
+  font-size: 20px;
+}
+
+.questions__item:not(last-child) {
+  margin-bottom: 40px;
+}
+
+.section-members {
+  padding: 0 0 25px 0;
+}
+
+.section-members__title {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.section-members__subtitle {
+  margin: 15px 0 15px 0;
+}
+
+.section-members__stuff {
+  display: flex;
+  gap: 37px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stuff__item {
+  background: #ffffff;
+  color: #202020;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  max-width: 300px;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.stuff__item:hover,
+.stuff__item :focus {
+  background: #202020;
+  color: #ffffff;
+  transition: all 0.4s ease-out;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+}
+
+.stuff__detail {
+  padding: 0 0 20px;
+}
+
+.publications__book {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0 15px 0;
+}
+
+.publications__title {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.book__subtitle {
+  margin: 25px 0 25px 0;
+}
+
+.book__image {
+  margin-right: 25px;
+}
+
+.book__authors span {
+  margin: 0 5px 0 0;
+}
+
+.authors__link {
+  text-decoration: none;
+  padding: 4px 8px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.authors__link:not(last-child) {
+  margin-right: 5px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.footer {
+  padding-top: 50px;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  color: #667dfa;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.footer__inner {
+  padding-bottom: 25px;
+}
+
+.list__item {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  background: #202020;
+  color: #ffffff;
+}
+
+h2 {
+  padding-top: 25px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1700px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
