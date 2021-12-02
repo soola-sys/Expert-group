@@ -11,6 +11,9 @@
 
 .footer__inner {
   padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .list__item {

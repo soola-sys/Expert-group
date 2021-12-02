@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Expert-group/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
@@ -19,16 +19,16 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header header-container container">
         <div class="header__inner">
           <div class="header__logos">
-            <a href="" class="header__link">
+            <!-- <a href="" class="header__link">
               <img
                 src="img/logo.png"
                 alt="Digital Rights"
                 width="118"
                 height="118"
-            /></a>
+            /></a> -->
             <a href="" class="header__link">
               <img
                 src="img/logo-drfl.png"
@@ -37,13 +37,26 @@
                 height="47"
             /></a>
           </div>
+          <nav class="header__nav">
+            <ul class="header__list list">
+              <li class="list__item">
+                <a href="" class="list__link"></a>О нас
+              </li>
+              <li class="list__item">
+                <a href="" class="list__link"></a>Состав Группы
+              </li>
+              <li class="list__item">
+                <a href="" class="list__link"></a>Публикации
+              </li>
+            </ul>
+          </nav>
           <div class="header__social social">
             <a href="https://www.instagram.com/dreg_kz/" class="social__link"
               ><object>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="24"
+                  height="24"
                   fill="white"
                   class="bi bi-instagram"
                   viewBox="0 0 16 16"
@@ -57,8 +70,8 @@
               ><object>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
+                  width="24"
+                  height="24"
                   fill="white"
                   class="bi bi-facebook"
                   viewBox="0 0 16 16"
@@ -116,47 +129,71 @@
       <div class="main-question questions">
         <div class="questions__container container">
           <div class="questions__list">
-            <div class="questions__item">
-              <h3 class="questions__title">Кто мы такие?</h3>
-              <p class="questions__answer">
-                Низовая инициатива из числа экспертов, правозащитников, юристов
-                и исследователей, которые активно продвигают цифровые права в
-                Казахстане.
-              </p>
-            </div>
-            <div class="questions__item">
-              <h3 class="questions__title">Как мы образовались?</h3>
-              <p class="questions__answer">
-                Потребность образовалась на фоне принятия массивного пакета
-                поправок о регулировании цифровых технологий, которые касались
-                множества прав человека в цифровой среде. Тогда мы сделали ряд
-                заявлений и внутренних обсуждений, чтобы определиться, как можно
-                мобилизоваться и действовать как гражданское общества в ответ на
-                новые вызовы.
-              </p>
-            </div>
-            <div class="questions__item">
-              <h3 class="questions__title">Как мы устроены?</h3>
-              <p class="questions__answer">
-                У нас горизонтальные отношения и решения принимаются совместно.
-                В группе 14 участников и участниц, 5 консультантов – все
-                представляют разные организации и экспертизу. Также есть
-                координатор, который занимается коммуникациями с государством,
-                организацией внутренних встреч и общим продвижением. Подробнее о
-                персоналиях в следующих публикациях.
-              </p>
-            </div>
-            <div class="questions__item">
-              <h3 class="questions__title">Чем мы занимаемся сейчас?</h3>
-              <p class="questions__answer">
-                Экспертизой и адвокацией рекомендаций по поправкам о
-                персональных данных и их защите, где мы уже внесли существенный
-                вклад в сторону позитивных изменений, провели ряд мероприятий и
-                дискуссий с выступлениями представителей государственных
-                органов. Мы смогли привлечь международных экспертов, составить
-                аналитические материалы, сформировать повестку в СМИ и наладить
-                связи с разработчиками поправок.
-              </p>
+            <h3 class="questions__title">О нас</h3>
+            <div class="questions__collapse collapse">
+              <div class="collapse__item">
+                <button type="button" class="collapse__drop js-drop">
+                  Кто мы такие ?
+                  <i class="bi bi-caret-down-fill arrow"></i>
+                </button>
+                <div class="collapse__content">
+                  <p class="collapse__text">
+                    Низовая инициатива из числа экспертов, правозащитников,
+                    юристов и исследователей, которые активно продвигают
+                    цифровые права в Казахстане.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse__item">
+                <button type="button" class="collapse__drop js-drop">
+                  Как мы образовались ?
+                  <i class="bi bi-caret-down-fill arrow"></i>
+                </button>
+                <div class="collapse__content">
+                  <p class="collapse__text">
+                    Потребность образовалась на фоне принятия массивного пакета
+                    поправок о регулировании цифровых технологий, которые
+                    касались множества прав человека в цифровой среде. Тогда мы
+                    сделали ряд заявлений и внутренних обсуждений, чтобы
+                    определиться, как можно мобилизоваться и действовать как
+                    гражданское общества в ответ на новые вызовы.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse__item">
+                <button type="button" class="collapse__drop js-drop">
+                  Как мы устроены ?
+                  <i class="bi bi-caret-down-fill arrow"></i>
+                </button>
+                <div class="collapse__content">
+                  <p class="collapse__text">
+                    У нас горизонтальные отношения и решения принимаются
+                    совместно. В группе 14 участников и участниц, 5
+                    консультантов – все представляют разные организации и
+                    экспертизу. Также есть координатор, который занимается
+                    коммуникациями с государством, организацией внутренних
+                    встреч и общим продвижением. Подробнее о персоналиях в
+                    следующих публикациях.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse__item">
+                <button type="button" class="collapse__drop js-drop">
+                  Чем мы занимаемся сейчас ?
+                  <i class="bi bi-caret-down-fill arrow"></i>
+                </button>
+                <div class="collapse__content">
+                  <p class="collapse__text">
+                    Экспертизой и адвокацией рекомендаций по поправкам о
+                    персональных данных и их защите, где мы уже внесли
+                    существенный вклад в сторону позитивных изменений, провели
+                    ряд мероприятий и дискуссий с выступлениями представителей
+                    государственных органов. Мы смогли привлечь международных
+                    экспертов, составить аналитические материалы, сформировать
+                    повестку в СМИ и наладить связи с разработчиками поправок.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -168,91 +205,81 @@
         </h3>
         <div class="section-members__stuff stuff">
           <div class="stuff__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-person"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+            <div class="stuff__card">
+              <img
+                src="img/person1.jpeg"
+                alt="Елжан Кабышев"
+                width="300"
+                height="300"
+                class="stuff__img"
               />
-            </svg>
-            <h3 class="stuff__name">Айгерім Құсайынқызы</h3>
-            <p class="stuff__detail">
-              Преподаватель Университета имени Сулеймена Демиреля
-            </p>
+              <h3 class="stuff__name">Елжан Кабышев</h3>
+              <p class="stuff__detail">
+                Руководитель проекта. Юрист, правозащитник проекта «Internet
+                Freedom». Участник Коалиции нового поколения правозащитников и
+                Экспертной группы по цифровым правам.
+              </p>
+            </div>
           </div>
           <div class="stuff__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-person"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+            <div class="stuff__card">
+              <img
+                src="img/person2.jpg"
+                alt="Аубакиров Арсен"
+                width="300"
+                height="300"
+                class="stuff__img"
               />
-            </svg>
-            <h3 class="stuff__name">Анна Гусарова</h3>
-            <p class="stuff__detail">
-              Директор Центральноазиатского института стратегических
-              исследований
-            </p>
+              <h3 class="stuff__name">Аубакиров Арсен</h3>
+              <p class="stuff__detail">
+                Координатор проекта. "Координатор Коалиции нового поколения
+                правозащитников, директор ОФ "Human Rights Consulting Group"
+              </p>
+            </div>
           </div>
           <div class="stuff__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-person"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+            <div class="stuff__card">
+              <img
+                src="img/person3.jpg"
+                alt="Aнна Вильгельми"
+                width="300"
+                height="300"
+                class="stuff__img"
               />
-            </svg>
-            <h3 class="stuff__name">Арсен Аубакиров</h3>
-            <p class="stuff__detail">
-              Директор ОФ «Human Rights Consulting Group»
-            </p>
+              <h3 class="stuff__name">Aнна Вильгельми</h3>
+              <p class="stuff__detail">
+                Редактор проекта. Мультимедийный журналист, ранее - глава
+                медиадепартамента Молодежной информационной службы Казахстана.
+              </p>
+            </div>
           </div>
           <div class="stuff__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-person"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+            <div class="stuff__card">
+              <img
+                src="img/person4.jpg"
+                alt="Тогжан Тулебаева"
+                width="300"
+                height="300"
+                class="stuff__img"
               />
-            </svg>
-            <h3 class="stuff__name">Гульмира Биржанова</h3>
-            <p class="stuff__detail">Соучредитель ОФ «Правовой медиа-центр»</p>
+              <h3 class="stuff__name">Тогжан Тулебаева</h3>
+              <p class="stuff__detail">Переводчик.</p>
+            </div>
           </div>
           <div class="stuff__item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-person"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+            <div class="stuff__card">
+              <img
+                src="img/person5.png"
+                alt="Аршын Тайжанов"
+                width="300"
+                height="300"
+                class="stuff__img"
               />
-            </svg>
-            <h3 class="stuff__name">Ғабдұл-Ғани Әбутәліп</h3>
-            <p class="stuff__detail">Юрист</p>
+              <h3 class="stuff__name">Аршын Тайжанов</h3>
+              <p class="stuff__detail">
+                Веб-разработчик, создание сайта ландшафта и техподдержка
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -293,7 +320,12 @@
       </div>
       <footer class="footer footer-container container">
         <div class="footer__inner">
-          <div class="footer__title">Menu</div>
+          <div class="footer__logo">
+            <img src="img/logo.png" alt="Logo" />
+          </div>
+          <div class="footer__title">
+            <p>Menu</p>
+          </div>
           <ul class="footer__list list">
             <li class="list__item">
               <a href="#" class="list__link"> </a>Кто мы такие?

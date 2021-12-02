@@ -1,20 +1,22 @@
 @import "../vars.scss";
 
 .header {
-  position: sticky;
-  top: 0;
   background-color: $dark;
-  z-index: 100;
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px 0 0;
+    padding: 20px 20px 20px 0;
   }
-  &__logos {
+  &__list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+  }
+}
+.list {
+  &__item {
+    &:not(last-child) {
+      margin-right: 25px;
+    }
   }
 }
 .social {
